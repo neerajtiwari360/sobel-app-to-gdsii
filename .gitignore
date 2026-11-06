@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+simulation/waveforms/
+results/synthesis/
+results/timing/
+results/physical_design/
+
+*.vcd
+*.fst
+*.bit
+*.dcp
+*.log
