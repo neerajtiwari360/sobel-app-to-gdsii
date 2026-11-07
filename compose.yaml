@@ -1,0 +1,13 @@
+services:
+  sobel-asic:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sobel-app-to-gdsii:local
+    volumes:
+      - ./:/workspace
+    working_dir: /workspace
+    shm_size: "1gb"
+    environment:
+      - PYTHONDONTWRITEBYTECODE=1
+    command: ["bash", "/workspace/docker/run-all.sh"]

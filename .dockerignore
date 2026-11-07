@@ -1,0 +1,7 @@
+.git
+.venv
+simulation
+results
+__pycache__
+*.vcd
+*.vvp

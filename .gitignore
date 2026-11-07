@@ -1,15 +1,49 @@
+# Python
 .venv/
 __pycache__/
 .pytest_cache/
 *.pyc
 
-simulation/waveforms/
-results/synthesis/
-results/timing/
-results/physical_design/
+# Python-generated outputs
+python/outputs/
 
+# Icarus Verilog / GTKWave
+*.vvp
 *.vcd
 *.fst
+*.lxt
+*.lxt2
+*.vcd.vpd
+
+# FPGA generated files
 *.bit
 *.dcp
+*.jou
+*.wdb
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.sim/
+.runs/
+
+# ASIC generated results
+results/
+!results/.gitkeep
+
+# Generic generated artifacts
+*.gds
+*.gdsii
+*.odb
+*.def
+*.spef
+*.sdf
+*.rpt
 *.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
